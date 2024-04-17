@@ -5,11 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400,700&family=Playfair+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
+    <!-- Header -->
+    <header class="header">
       <div class="container">
         <div class="header__iner">
           <a href="#!" class="logo">
@@ -19,19 +30,19 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#" class="menu__link">WOMEN'S FRAGRANCE</a>
+                <a href="#!" class="menu__link">WOMEN'S FRAGRANCE</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">MEN'S FRAGRANCE</a>
+                <a href="#!" class="menu__link">MEN'S FRAGRANCE</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">MAKEUP</a>
+                <a href="#!" class="menu__link">MAKEUP</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">SKINCARE</a>
+                <a href="#!" class="menu__link">SKINCARE</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">DIOR SPA</a>
+                <a href="#!" class="menu__link">DIOR SPA</a>
               </li>
             </ul>
           </nav>
@@ -49,8 +60,73 @@
           </ul>
         </div>
       </div>
-    </div>
-
+    </header>
+    <!--End Header -->
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="hero-slide">
+              <div class="container">
+                <div class="hero-slide__inner">
+                  <img src="images/slider_hero/1_1.jpg" alt="parfume" />
+                  <div class="hero-slide__content">
+                    <h1 class="hero-slide__title">GRIS DIOR</h1>
+                    <p class="hero-slide__subtitle">Fragrance</p>
+                    <p class="hero-slide__text">
+                      With Gris Dior you dare to reveal your most surprising,
+                      mysterious and unexpected facets.
+                    </p>
+                    <a class="hero-slide__btn" href="#!">DISCOVER</a>
+                  </div>
+                  <img
+                    src="images/slider_hero/2_1.jpg"
+                    alt="the girl holds the perfume"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="hero-slide"
+              style="background-image: url(images/slider_hero/bg-1.jpg)"
+            >
+              <div class="container">
+                <div class="hero-slide__inner">
+                  <a class="hero-slide__btn" href="#!">YOUR NEW EXPERIENCE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="hero-slide"
+              style="background-image: url(images/slider_hero/bg-2.jpg)"
+            >
+              <div class="container">
+                <div class="hero-slide__inner">
+                  <a class="hero-slide__btn" href="#!">YOUR NEW EXPERIENCE</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container container-arrow">
+        <div class="swiper-button-prev">
+          <img src="images/icons/arrow-left.svg" alt="arrow prev" />
+        </div>
+        <div class="swiper-button-next">
+          <img src="images/icons/arrow-right.svg" alt="arrow next" />
+        </div>
+      </div>
+    </section>
+    <!--  End Hero -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
